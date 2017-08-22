@@ -1,0 +1,78 @@
+<!DOCTYPE 5>
+<html> 
+  <head> 
+    <meta charset="utf-8"/>
+    <title>Morpion Sublime Skinz</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="http://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css"/>
+    <link rel="stylesheet" href="css/main.css"/>
+  </head>
+  <body> 
+    <div class="container-fluid" id="container"> 
+      <div class="row"> 
+        <div class="wrap wrap-left col-md-6">
+          <div class="row"> 
+            <div class="col-md-12" id="title"> 
+              <h1>Morpion</h1>
+              <p>Cliquez, alignez, gagnez !</p>
+              <div id="informationJeu"> 
+                <p></p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="wrap wrap-right col-md-6">
+          <div class="morpion">
+            <div class="bk-morpion"></div>
+            <div class="row">
+              <div class="col-md-12 column">
+                <button type="button"></button>
+                <button type="button"></button>
+                <button type="button"></button>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-md-12 column">
+                <button type="button"></button>
+                <button type="button"></button>
+                <button type="button"></button>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-md-12 column">
+                <button type="button"></button>
+                <button type="button"></button>
+                <button type="button"></button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="container-fluid" id="rules">           
+      <div class="row">
+        <div class="col-md-4 explanations">
+          <div class="wrap-exp"> 
+            <div class="circle"><i class="ion-person-stalker"></i></div>
+            <p>Choississez le joueur X ou O, le joueur X commence toujours.</p>
+          </div>
+        </div>
+        <div class="col-md-4 explanations">
+          <div class="wrap-exp"> 
+            <div class="circle"><i class="ion-mouse"> </i></div>
+            <p>Cliquez sur une case pour ajouter votre symbole.</p>
+          </div>
+        </div>
+        <div class="col-md-4 explanations">
+          <div class="wrap-exp"> 
+            <div class="circle"><i class="ion-trophy"></i></div>
+            <p>Alignez 3 de vos symboles avant votre adversaire pour gagner.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+    <script src="http://cdnjs.cloudflare.com/ajax/libs/gsap/1.19.0/TweenMax.min.js"></script>
+    <script type="text/javascript" src="js/main.js"></script>
+  </body>
+</html>

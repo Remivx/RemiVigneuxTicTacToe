@@ -1,0 +1,59 @@
+doctype 5
+html 
+  head 
+    meta(charset="utf-8")
+    title Morpion Sublime Skinz
+    
+    link(rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css")
+    link(rel="stylesheet" href="http://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css")
+    link(rel="stylesheet" href="css/main.css")
+    
+  body 
+    
+    .container-fluid#container 
+      .row 
+        .wrap.wrap-left.col-md-6
+          .row 
+            .col-md-12#title 
+              h1 Morpion
+              p Cliquez, alignez, gagnez !
+              #informationJeu 
+               p
+          
+        .wrap.wrap-right.col-md-6
+          .morpion
+            .bk-morpion
+            .row
+              .col-md-12.column
+                button(type="button")
+                button(type="button")
+                button(type="button")
+            .row
+              .col-md-12.column
+                button(type="button")
+                button(type="button")
+                button(type="button")
+            .row
+              .col-md-12.column
+                button(type="button")
+                button(type="button")
+                button(type="button")
+    .container-fluid#rules            
+      .row
+        .col-md-4.explanations
+          .wrap-exp 
+            .circle: i.ion-person-stalker
+            p Choississez le joueur X ou O, le joueur X commence toujours.
+        .col-md-4.explanations
+          .wrap-exp 
+            .circle: i.ion-mouse 
+            p Cliquez sur une case pour ajouter votre symbole.
+        .col-md-4.explanations
+          .wrap-exp 
+            .circle: i.ion-trophy
+            p Alignez 3 de vos symboles avant votre adversaire pour gagner.
+  
+    script(src="https://code.jquery.com/jquery-3.2.1.min.js")
+    script(src="http://cdnjs.cloudflare.com/ajax/libs/gsap/1.19.0/TweenMax.min.js")
+    script(type="text/javascript", src="js/main.js")
+      

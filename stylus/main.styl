@@ -1,0 +1,129 @@
+@import url 'https://fonts.googleapis.com/css?family=Montserrat:300,400,600'
+font = Montserrat, sans-serif
+
+black_theme = #212121
+white_theme = #f5f5f5
+grey_theme = #e0e0e0
+orange_theme = #ED7D04
+
+
+
+#container
+  width 100%
+  height 75vh
+  background url('../img/bk.jpg') center no-repeat
+  background-size cover
+  font-family font
+  color white_theme
+  .wrap
+    height 75vh
+  .wrap-left
+    display flex
+    justify-content center
+    align-items center
+    #title
+      h1
+        letter-spacing 35px
+        text-transform uppercase
+        font-size 5rem
+      p
+        letter-spacing 3px
+        text-transform uppercase
+        font-size 1.5rem
+      #informationJeu
+        p
+          color orange_theme
+          font-size 1rem
+          margin-bottom 5rem
+        a
+          position absolute
+          text-decoration none
+          padding 10px 20px 10px 20px
+          margin-top 20px
+          text-transform uppercase
+          color white_theme
+          border 2px solid white_theme
+  .wrap-right
+    display flex
+    flex-direction column
+    justify-content center
+    align-items center
+    .morpion
+      position relative
+      width 80%
+      height auto
+      background rgba(251,251,251,0.4)
+      overflow hidden
+      border-radius 5px
+      color white
+      .bk-morpion
+        position absolute
+        top 0
+        left 0
+        width 100%
+        height 100%
+        background url('../img/bk-morpion.jpg') no-repeat center
+        background-size cover
+        opacity 0.3
+      .row
+        padding 0
+        margin-top 0
+        margin-bottom 0
+        .column
+          display flex
+          justify-content center
+          button
+            cursor pointer
+            width 33.3%
+            height 120px
+            vertical-align top
+            background transparent
+            border 1px solid black_theme
+            font-size 5rem
+            font-weight 700
+            color black_theme
+            transition background 0.1s linear
+            &:hover
+              background rgba(237, 125, 4, 0.7)
+#rules
+  height 25vh
+  background grey_theme
+  position relative
+  font-family font
+  .row
+    position absolute
+    top 6rem
+    left 0
+    width 100%
+    height auto
+    .explanations
+      height 100%
+      display flex
+      justify-content center
+      align-items center
+      .wrap-exp
+        margin-top -10rem
+        width 80%
+        background white_theme
+        padding 2rem 2rem 1rem 2rem
+        height auto
+        display flex
+        flex-direction column
+        justify-content center
+        align-items center
+        border-radius 2px
+        .circle
+          width 90px
+          height 90px
+          background black_theme
+          border-radius 50%
+          margin-bottom 1.5rem
+          display flex
+          justify-content center
+          align-items center
+          i
+            color white_theme
+            font-size 2.2rem
+        p
+          text-align center
+          color black_theme
